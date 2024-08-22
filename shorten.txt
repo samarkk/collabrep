@@ -1,0 +1,7 @@
+mv kafka-console-producer.sh kafka-console-producer
+mv kafka-console-consumer.sh kafka-console-consumer
+mv kafka-topics.sh kafka-topics
+mv zookeeper-server-start.sh zookeeper-server-start
+mv kafka-server-start.sh kafka-server-start
+mv connect-standalone.sh connect-standalone
+mv connect-distributed.sh connect-distributed
