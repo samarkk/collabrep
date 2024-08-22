@@ -1,0 +1,15 @@
+kafka-server-stop
+zookeeper-server-stop
+sudo systemctl stop docker
+sudo rm -rf /tmp/zookeeper
+sudo rm -rf /tm/kafka-logs
+sudo rm -rf /home/vagrant/zookeeper
+sudo rm -rf /home/vagrant/kafka-logs
+cd /home/avgrant
+zookeeper-server-start -daemon kafka/config/zookeeper.properties
+kafka-server-start -daemon kafka/config/server.properties
+hvces
+../../bin/schema-registry-start -daemon schema-registry.properties
+cd ../ksqldb
+../../bin/ksql-server-start -daemon ksql-server.properties
+
