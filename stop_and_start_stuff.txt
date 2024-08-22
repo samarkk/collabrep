@@ -5,11 +5,16 @@ sudo rm -rf /tmp/zookeeper
 sudo rm -rf /tm/kafka-logs
 sudo rm -rf /home/vagrant/zookeeper
 sudo rm -rf /home/vagrant/kafka-logs
+sudo rm -rf /home/vagrant/confluent/logs
 cd /home/avgrant
 zookeeper-server-start -daemon kafka/config/zookeeper.properties
 kafka-server-start -daemon kafka/config/server.properties
+tail -f /home/vagrant/kafka/logs/server.log
 hvces
 ../../bin/schema-registry-start -daemon schema-registry.properties
+tail -f /home/vagrant/confluent/logs/schema-registry.log
 cd ../ksqldb
 ../../bin/ksql-server-start -daemon ksql-server.properties
+tail -f /home/vagrant/confluent/logs/ksql.out
+
 
