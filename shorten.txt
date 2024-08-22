@@ -1,9 +1,14 @@
 cd /home/vagrant/kafka/bin
 pwd
+
+mv zookeeper-server-start.sh zookeeper-server-start
+mv kafka-server-start.sh kafka-server-start
+mv zookeeper-server-stop.sh zookeeper-server-stop
+mv kafka-server-stop.sh kafka-server-stop
 mv kafka-console-producer.sh kafka-console-producer
 mv kafka-console-consumer.sh kafka-console-consumer
 mv kafka-topics.sh kafka-topics
-mv zookeeper-server-start.sh zookeeper-server-start
-mv kafka-server-start.sh kafka-server-start
+mv kafka-consumer-groups.sh kafka-consumer-groups
+mv kafka-configs.sh kafka-configs
 mv connect-standalone.sh connect-standalone
 mv connect-distributed.sh connect-distributed
