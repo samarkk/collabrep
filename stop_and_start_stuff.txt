@@ -6,7 +6,7 @@ sudo rm -rf /tm/kafka-logs
 sudo rm -rf /home/vagrant/zookeeper
 sudo rm -rf /home/vagrant/kafka-logs
 sudo rm -rf /home/vagrant/confluent/logs
-cd /home/avgrant
+cd /home/vagrant
 zookeeper-server-start -daemon kafka/config/zookeeper.properties
 kafka-server-start -daemon kafka/config/server.properties
 tail -f /home/vagrant/kafka/logs/server.log
