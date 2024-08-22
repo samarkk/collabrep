@@ -1,1 +1,1 @@
-cd /home/vagrant/kafka/config
+/home/vagrant/confluent/bin/kafka-avro-console-consumer --bootstrap-server master:9092 --topic nsefo-topic-avro --from-beginning  --property print.key=true --key-deserializer org.apache.kafka.common.serialization.StringDeserializer
