@@ -1,3 +1,5 @@
+cd /home/vagrant/kafka/bin
+pwd
 mv kafka-console-producer.sh kafka-console-producer
 mv kafka-console-consumer.sh kafka-console-consumer
 mv kafka-topics.sh kafka-topics
