@@ -1,2 +1,3 @@
 /home/vagrant/confluent/bin/kafka-avro-console-consumer --bootstrap-server master:9092 --topic nsefo-topic-avro --from-beginning  --property print.key=true --key-deserializer org.apache.kafka.common.serialization.StringDeserializer
 mysql -u root -pramanShastri24!
+master kafka master:9092 http://master:8081 nsefo-topic-avro
