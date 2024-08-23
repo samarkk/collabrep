@@ -3,4 +3,5 @@ mysql -u root -pramanShastri24!
 master kafka master:9092 http://master:8081 nsefo-topic-avro
 connect-distributed -daemon /home/vagrant/kafka/config/connect-distributed.properties
 tail -f /home/vagrant/kafka/logs/connect.log
+for x in {1..10};do echo line $x >>/home/vagrant/distdemo.txt;done
 
